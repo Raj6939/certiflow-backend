@@ -7,8 +7,8 @@ const transporter = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-        user: 'christelle.parker17@ethereal.email',
-        pass: 'v23J7angfTprraHWZd'
+        user: 'retta.carroll8@ethereal.email',
+        pass: 'VP8aEcd3MdsJ1hFy4S'
     }
 })
 const sendEmail = async(req,res) =>{        
@@ -27,7 +27,8 @@ const sendEmail = async(req,res) =>{
     });
     let mailOptions
     let mailTemplate    
-    if(data.schemaId === UNIVERSITY_CERTIFICATE){
+    if(data.schemaId === CERTIFICATE_SCHEMA){
+      console.log('in certificate')
         mailTemplate=certificateEmail
         console.log(mailTemplate)
         mailTemplate=mailTemplate.replace('@@recipientFullName@@',vc.recipientFullName)
@@ -51,7 +52,7 @@ const sendEmail = async(req,res) =>{
         mailTemplate=mailTemplate.replace('@@token@@',token)
         mailTemplate=mailTemplate.replace('@@issuerName@@',vc.issuerName)
         mailOptions ={
-        from: 'rajvpatil1008@gmail.com',
+        from: 'retta.carroll8@ethereal.email',
         to: vc.recipientEmail,
         subject: `${vc.eventName} Invitation`,
         message:mailTemplate
