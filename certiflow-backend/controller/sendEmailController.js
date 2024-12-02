@@ -20,7 +20,7 @@ const sendEmail = async(req,res) =>{
     for(let vc of vcAttributes){
 
     const date = new Date()
-    vc.issuanceDate = date
+    vc.issuedDate = date
     const jwtSecret = 'rajabced12'
     const token = jwt.sign({ vcAttributes:vc,tokenType: 'certificate',schemaId:data.schemaId }, jwtSecret, {
     expiresIn: '10m',
