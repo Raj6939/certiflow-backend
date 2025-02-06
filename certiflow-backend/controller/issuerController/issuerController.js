@@ -151,7 +151,7 @@ const addAdmin = async (req, res) => {
                     You are invited to join Team!
                     </p>
                     <p>Click here to join the team!<br></p><br>
-                    <a href="http://localhost:8080/#/invitation/?jwt=${token}" target="_blank" style="text-decoration:none;
+                    <a href="https://certiflow.netlify.app/#/invitation/?jwt=${token}" target="_blank" style="text-decoration:none;
                 width: 150px; padding: 15px;font-weight: MEDIUM; background:teal; color: black; 
                 cursor: pointer;
                 font-size: 110%;">Click Here</a>
