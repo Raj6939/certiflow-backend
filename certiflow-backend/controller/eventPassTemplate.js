@@ -59,7 +59,7 @@ const eventTemplate = `<html>
                 Congratulations, This is your @@degreeType@@ @@degreeName@@ Certificate!
                 </p>
                 <p>Click here to download!<br></p><br>
-                <a href="http://localhost:8080/#/credential/issue/?jwt=@@token@@" target="_blank" style="text-decoration:none;
+                <a href="https://certiflow.netlify.app/#/credential/issue/?jwt=@@token@@" target="_blank" style="text-decoration:none;
             width: 150px; padding: 15px;font-weight: MEDIUM; background:teal; color: black; 
             cursor: pointer;
             font-size: 110%;">Click Here</a>
